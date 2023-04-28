@@ -1,0 +1,96 @@
+2023-04-28 18:29:50,784 INFO     errbot.bootstrap          Found Storage plugin: Shelf.
+2023-04-28 18:29:50,787 INFO     errbot.bootstrap          Found Backend plugin: Text
+2023-04-28 18:29:53,115 ERROR    errbot.bootstrap          Some plugins failed to load:
+Traceback (most recent call last):
+  File "/Users/Cos-Ibe/miniforge3/envs/zoom/lib/python3.9/site-packages/errbot/plugin_manager.py", line 289, in _load_plugins_generic
+    plugin_classes = plugin_info.load_plugin_classes(
+  File "/Users/Cos-Ibe/miniforge3/envs/zoom/lib/python3.9/site-packages/errbot/plugin_info.py", line 100, in load_plugin_classes
+    spec.loader.exec_module(modu1e)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/Cos-Ibe/miniforge3/envs/zoom/lib/python3.9/site-packages/errbot/core_plugins/webserver.py", line 9, in <module>
+    from OpenSSL import crypto
+  File "/Users/Cos-Ibe/miniforge3/envs/zoom/lib/python3.9/site-packages/OpenSSL/__init__.py", line 8, in <module>
+    from OpenSSL import crypto, SSL
+  File "/Users/Cos-Ibe/miniforge3/envs/zoom/lib/python3.9/site-packages/OpenSSL/crypto.py", line 3279, in <module>
+    _lib.OpenSSL_add_all_algorithms()
+AttributeError: module 'lib' has no attribute 'OpenSSL_add_all_algorithms'
+
+2023-04-28 18:29:53,207 INFO     errbot.core               Activate internal commands
+2023-04-28 18:29:53,207 INFO     errbot.plugin_manager     Activate bot plugins...
+2023-04-28 18:29:53,207 INFO     errbot.plugin_manager     Activate plugin: ACLs.
+2023-04-28 18:29:53,208 INFO     errbot.core_plugins.wsview Checking ACLS for webhooks
+2023-04-28 18:29:53,208 INFO     errbot.plugin_manager     Activate plugin: Flows.
+2023-04-28 18:29:53,209 INFO     errbot.core_plugins.wsview Checking Flows for webhooks
+2023-04-28 18:29:53,209 INFO     errbot.plugin_manager     Activate plugin: CommandNotFoundFilter.
+2023-04-28 18:29:53,210 INFO     errbot.core_plugins.wsview Checking CommandNotFoundFilter for webhooks
+2023-04-28 18:29:53,210 INFO     errbot.plugin_manager     Activate plugin: Health.
+2023-04-28 18:29:53,210 INFO     errbot.core_plugins.wsview Checking Health for webhooks
+2023-04-28 18:29:53,210 INFO     errbot.plugin_manager     Activate plugin: Backup.
+2023-04-28 18:29:53,210 INFO     errbot.core_plugins.wsview Checking Backup for webhooks
+2023-04-28 18:29:53,211 ERROR    errbot.plugin_manager     Error loading Webserver.
+Traceback (most recent call last):
+  File "/Users/Cos-Ibe/miniforge3/envs/zoom/lib/python3.9/site-packages/errbot/plugin_manager.py", line 444, in activate_non_started_plugins
+    if not plugin.is_activated:
+AttributeError: 'NoneType' object has no attribute 'is_activated'
+2023-04-28 18:29:53,211 INFO     errbot.plugin_manager     Activate plugin: TextCmds.
+2023-04-28 18:29:53,211 INFO     errbot.core_plugins.wsview Checking TextModeCmds for webhooks
+2023-04-28 18:29:53,211 INFO     errbot.plugin_manager     Activate plugin: VersionChecker.
+2023-04-28 18:29:53,211 INFO     errbot.plugins.VersionChecker Skip version checking under text mode.
+2023-04-28 18:29:53,211 INFO     errbot.core_plugins.wsview Checking VersionChecker for webhooks
+2023-04-28 18:29:53,211 INFO     errbot.plugin_manager     Activate plugin: Plugins.
+2023-04-28 18:29:53,212 INFO     errbot.core_plugins.wsview Checking Plugins for webhooks
+2023-04-28 18:29:53,212 INFO     errbot.plugin_manager     Activate plugin: Help.
+2023-04-28 18:29:53,212 INFO     errbot.core_plugins.wsview Checking Help for webhooks
+2023-04-28 18:29:53,212 INFO     errbot.plugin_manager     Activate plugin: ChatRoom.
+2023-04-28 18:29:53,213 INFO     errbot.core_plugins.wsview Checking ChatRoom for webhooks
+2023-04-28 18:29:53,213 INFO     errbot.plugins.ChatRoom   Connecting bot chatrooms
+2023-04-28 18:29:53,213 INFO     errbot.plugin_manager     Activate plugin: Utils.
+2023-04-28 18:29:53,213 INFO     errbot.core_plugins.wsview Checking Utils for webhooks
+2023-04-28 18:29:53,213 INFO     errbot.plugin_manager     Activate plugin: Example.
+2023-04-28 18:29:53,214 INFO     errbot.core_plugins.wsview Checking Example for webhooks
+2023-04-28 18:29:53,215 WARNING  errbot.core               Some plugins failed to start during bot startup:
+
+Traceback (most recent call last):
+  File "/Users/Cos-Ibe/miniforge3/envs/zoom/lib/python3.9/site-packages/errbot/plugin_manager.py", line 289, in _load_plugins_generic
+    plugin_classes = plugin_info.load_plugin_classes(
+  File "/Users/Cos-Ibe/miniforge3/envs/zoom/lib/python3.9/site-packages/errbot/plugin_info.py", line 100, in load_plugin_classes
+    spec.loader.exec_module(modu1e)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/Cos-Ibe/miniforge3/envs/zoom/lib/python3.9/site-packages/errbot/core_plugins/webserver.py", line 9, in <module>
+    from OpenSSL import crypto
+  File "/Users/Cos-Ibe/miniforge3/envs/zoom/lib/python3.9/site-packages/OpenSSL/__init__.py", line 8, in <module>
+    from OpenSSL import crypto, SSL
+  File "/Users/Cos-Ibe/miniforge3/envs/zoom/lib/python3.9/site-packages/OpenSSL/crypto.py", line 3279, in <module>
+    _lib.OpenSSL_add_all_algorithms()
+AttributeError: module 'lib' has no attribute 'OpenSSL_add_all_algorithms'
+Error: Webserver failed to activate: 'NoneType' object has no attribute 'is_activated'.
+
+2023-04-28 18:29:53,215 INFO     errbot.core               Some plugins failed to start during bot startup:
+
+Traceback (most recent call last):
+  File "/Users/Cos-Ibe/miniforge3/envs/zoom/lib/python3.9/site-packages/errbot/plugin_manager.py", line 289, in _load_plugins_generic
+    plugin_classes = plugin_info.load_plugin_classes(
+  File "/Users/Cos-Ibe/miniforge3/envs/zoom/lib/python3.9/site-packages/errbot/plugin_info.py", line 100, in load_plugin_classes
+    spec.loader.exec_module(modu1e)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/Cos-Ibe/miniforge3/envs/zoom/lib/python3.9/site-packages/errbot/core_plugins/webserver.py", line 9, in <module>
+    from OpenSSL import crypto
+  File "/Users/Cos-Ibe/miniforge3/envs/zoom/lib/python3.9/site-packages/OpenSSL/__init__.py", line 8, in <module>
+    from OpenSSL import crypto, SSL
+  File "/Users/Cos-Ibe/miniforge3/envs/zoom/lib/python3.9/site-packages/OpenSSL/crypto.py", line 3279, in <module>
+    _lib.OpenSSL_add_all_algorithms()
+AttributeError: module 'lib' has no attribute 'OpenSSL_add_all_algorithms'
+Error: Webserver failed to activate: 'NoneType' object has no attribute 'is_activated'.
+
+2023-04-28 18:29:53,215 INFO     errbot.core               Notifying connection to all the plugins...
+2023-04-28 18:29:53,215 INFO     errbot.plugins.ChatRoom   Connecting bot chatrooms
+2023-04-28 18:29:53,215 INFO     errbot.core               Plugin activation done.
+2023-04-28 18:31:08,181 INFO     errbot.plugins.ACLs       Matching ACL {} against username @CHANGE_ME for command Help:help.
+2023-04-28 18:31:08,183 INFO     errbot.core               Processing command "help" with parameters "" from @CHANGE_ME
+2023-04-28 18:32:02,131 INFO     errbot.core               Disconnect callback, deactivating all the plugins.
+2023-04-28 18:32:02,140 INFO     errbot.plugin_manager     Shutdown.
+2023-04-28 18:32:02,141 INFO     errbot.plugin_manager     Bye.
+2023-04-28 18:32:02,141 INFO     errbot.cli                Process exiting
